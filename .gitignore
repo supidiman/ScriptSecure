@@ -1,0 +1,15 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.bak
+
+# Vektor indeksi: "python ingest.py" ile yeniden olusturulur
+data/
+
+# Yerel test ciktilari
+4b.json
+8b.json
+*_run*.json
+hoca*.json
+sonuc_*.txt

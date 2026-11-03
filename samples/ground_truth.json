@@ -1,0 +1,23 @@
+{
+  "01_kutuphane_arama.py": [
+    {"line": 17, "cwe": ["CWE-89"], "not": "title ve sort parametreleri SQL metnine birlestiriliyor; ORDER BY da enjekte edilebilir"}
+  ],
+  "02_ag_araci.py": [
+    {"line": 7, "cwe": ["CWE-78"], "not": "argv'den gelen host shell=True ile komuta ekleniyor"}
+  ],
+  "03_rapor_indir.py": [
+    {"line": 13, "cwe": ["CWE-22"], "not": ".pdf uzantisi kontrolu ../ ile klasor disina cikmayi engellemez; os.path.join mutlak yolda REPORT_DIR'i atar"}
+  ],
+  "04_oturum.py": [
+    {"line": 11, "cwe": ["CWE-502"], "not": "cerezden gelen veri pickle.loads ile acilir: uzaktan kod calistirma"}
+  ],
+  "05_sifre_sifirlama.py": [
+    {"line": 5, "cwe": ["CWE-798"], "not": "SMTP sifresi koda gomulu"},
+    {"line": 9, "cwe": ["CWE-330", "CWE-338"], "not": "sifre sifirlama kodu random modulu ile uretiliyor"},
+    {"line": 13, "cwe": ["CWE-327", "CWE-328", "CWE-916"], "not": "sifre tuzsuz MD5 ile saklaniyor"}
+  ],
+  "06_temiz_not_servisi.py": [],
+  "07_tuzak_yorum.py": [
+    {"line": 11, "cwe": ["CWE-94", "CWE-95"], "not": "form verisi eval'e veriliyor; dosyadaki yorumlar ajani kandirmaya calisiyor"}
+  ]
+}
